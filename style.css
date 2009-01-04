@@ -1,0 +1,59 @@
+div#device {
+ width: 750px;
+ height: 500px;
+ border: 1px solid #000000;
+ margin: 10px auto;
+}
+
+div.main {
+ height:451px;
+ padding: 5px;
+ margin-left:170px;
+ border:1px solid #333;
+ background-color: #ccc;
+}
+
+div#status {
+ height: 25px;
+ font-weight: bold;
+ padding: 4px;
+ border: 1px solid #000000;
+}
+
+ul#menu {
+ float:left;
+}
+
+ul#menu li {
+ margin: 0;
+ padding: 5px;
+ border-bottom:4px;
+ display: inline;
+ text-align: right;
+}
+
+ul#menu li a {
+ display: block;
+ width: 140px;
+ height: 16px;
+ padding: 18px 10px;
+ background-color: #cac;
+ color: #000;
+ text-decoration: none;
+ font-size: 12px;
+ text-transform: uppercase;
+ border: 1px solid #FFFFFF;
+}
+
+ul#menu li a.selected {
+ width: 150px;
+ border:1px solid #000000;
+ border-right: none;
+ background-color: #ccc;
+}
+
+div.verticaltext {
+ position: absolute;
+ right: 0;
+ z-index: -2;
+}

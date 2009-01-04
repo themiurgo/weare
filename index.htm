@@ -1,0 +1,64 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+ <head>
+	<title>
+	 WearE - Wearable computer Enhanced
+	</title>
+	<link rel="stylesheet" type="text/css" href="reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	 $(function () {
+		 var tabContainers = $('div#device > div.main');
+		 tabContainers.hide().filter('#home').show();
+
+		 $('div#device ul#menu a').click(function () {
+			tabContainers.hide();
+			selected = tabContainers.filter(this.hash);
+			selected.load(this.id+'.htm').show();
+			$('div#device ul#menu a').removeClass('selected');
+			$(this).addClass('selected');
+			return false;
+			}).filter('#home').click();
+		 });
+
+ </script>
+</head>
+
+<body>
+ <div id="logo" class="verticaltext"><img src="logo.png" /></div>
+ <div id="device">
+	<div id="status">
+	 Orario blabla
+	</div>
+	<ul id="menu">
+	 <li><a href="#home" id="home" class="selected"><span>Home</span></a></li>
+	 <li><a href="#mission" id="mission"><span>Mission</span></a></li>
+	 <li><a href="#channels" id="channels"><span>Channels</span></a></li>
+	 <li><a href="#health" id="health"><span>Health</span></a></li>
+	 <li><a href="#environment" id="environment"><span>Environment</span></a></li>
+	 <li><a href="#station" id="station"><span>Station</span></a></li>
+	</ul>
+	<div id="home" class="main">
+	 HOME
+	</div>
+	<div id="mission" class="main">
+	 MISSION
+	</div>
+	<div id="channels" class="main">
+	 CHANNELS
+	</div>
+	<div id="health" class="main">
+	 HEALTH
+	</div>
+	<div id="environment" class="main">
+	 ENVIRONMENT
+	</div>
+	<div id="station" class="main">
+	 STATION
+	</div>
+ </div>
+</body>
+ </html>
