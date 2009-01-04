@@ -9,8 +9,9 @@ div.main {
  height:451px;
  padding: 5px;
  margin-left:170px;
- border:1px solid #333;
- background-color: #ccc;
+ border:1px solid #00248F;
+ color: #BFE4FF;
+ background-color: #00487D;
 }
 
 div#status {
@@ -32,24 +33,27 @@ ul#menu li {
  text-align: right;
 }
 
+ul#menu li a.selected {
+ width: 140px;
+ border:1px solid #000000;
+ border-right: none;
+ color: #FF5E00;
+ background-color: #00487D;
+ padding-right: 10px;
+}
+
 ul#menu li a {
  display: block;
- width: 140px;
+ width: 128px;
  height: 16px;
- padding: 18px 10px;
- background-color: #cac;
- color: #000;
+ padding: 18px 20px;
  text-decoration: none;
+ font-weight: bold;
  font-size: 12px;
  text-transform: uppercase;
  border: 1px solid #FFFFFF;
-}
-
-ul#menu li a.selected {
- width: 150px;
- border:1px solid #000000;
- border-right: none;
- background-color: #ccc;
+ background-color: #BFE4FF;
+ color: #0066B3;
 }
 
 div.verticaltext {
