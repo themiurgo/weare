@@ -16,7 +16,7 @@ div#main {
 
 div#content {
  height: 440px;
- border:1px solid #000000;
+ border: 0px solid #000000;
 }
 
 div#status {
@@ -28,37 +28,41 @@ div#status {
 
 ul#menu {
  float:left;
+ position:relative;
+ top: 14px;
 }
 
 ul#menu li {
- margin: 0;
- padding: 5px;
- border-bottom:4px;
- display: inline;
+ width: 148px;
+ height: 30px;
+ margin: 4px 0 0 0;
  text-align: right;
+ display: block;
+ padding: 17px 20px 0px 0;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 14px;
+ text-transform: uppercase;
+ border: 1px solid #FFFFFF;
+ background-color: #BFE4FF;
 }
 
-ul#menu li a.selected {
- width: 139px;
- border:1px solid #000000;
+ul#menu li.selected {
+ width: 159px;
  border-right: none;
  color: #FF5E00;
  background-color: #00487D;
  padding-right: 10px;
 }
 
+ul#menu li.selected a {
+ color: #FF5E00;
+}
+
 ul#menu li a {
- display: block;
- width: 128px;
- height: 16px;
- padding: 18px 20px;
- text-decoration: none;
- font-weight: bold;
- font-size: 12px;
- text-transform: uppercase;
- border: 1px solid #FFFFFF;
- background-color: #BFE4FF;
  color: #0066B3;
+ position: relative;
+ top:5px;
 }
 
 div.verticaltext {

@@ -13,11 +13,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script type="text/javascript">
 	 $(document).ready(function(){
 		 Nifty("div#main","big fixed-height");
+		 Nifty("ul#menu li","fixed-height left transparent");
 
 		 $('div#device ul#menu a').click(function () {
 			$('#content').load(this.id+'.htm');
-			$('div#device ul#menu a').removeClass('selected');
-			$(this).addClass('selected');
+			$('div#device ul#menu li').removeClass('selected');
+			$('div#device ul#menu li#'+this.id).addClass('selected');
 			return false;
 			});
 		 });
@@ -29,12 +30,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  <div id="device">
 	<div id="status">Orario blabla</div>
 	<ul id="menu">
-	 <li><a href="#home" id="home" class="selected"><span>Home</span></a></li>
-	 <li><a href="#mission" id="mission"><span>Mission</span></a></li>
-	 <li><a href="#channels" id="channels"><span>Channels</span></a></li>
-	 <li><a href="#health" id="health"><span>Health</span></a></li>
-	 <li><a href="#environment" id="environment"><span>Environment</span></a></li>
-	 <li><a href="#station" id="station"><span>Station</span></a></li>
+	 <li id="home" class="selected"><a href="#home" id="home"><span>Home</span></a></li>
+	 <li id="mission"><a href="#mission" id="mission"><span>Mission</span></a></li>
+	 <li id="channels"><a href="#channels" id="channels"><span>Channels</span></a></li>
+	 <li id="health"><a href="#health" id="health"><span>Health</span></a></li>
+	 <li id="environment"><a href="#environment" id="environment"><span>Environment</span></a></li>
+	 <li id="station"><a href="#station" id="station"><span>Station</span></a></li>
 	</ul>
 	<div id="main">
 	 <div id="content">dcsdcs
