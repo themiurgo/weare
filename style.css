@@ -5,13 +5,18 @@ div#device {
  margin: 10px auto;
 }
 
-div.main {
- height:451px;
- padding: 5px;
+div#main {
+ padding: 10px;
  margin-left:170px;
- border:1px solid #00248F;
+ margin-right:2px;
+ margin-bottom:2px;
  color: #BFE4FF;
  background-color: #00487D;
+}
+
+div#content {
+ height: 440px;
+ border:1px solid #000000;
 }
 
 div#status {
@@ -34,7 +39,7 @@ ul#menu li {
 }
 
 ul#menu li a.selected {
- width: 140px;
+ width: 139px;
  border:1px solid #000000;
  border-right: none;
  color: #FF5E00;

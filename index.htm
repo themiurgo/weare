@@ -8,31 +8,26 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	</title>
 	<link rel="stylesheet" type="text/css" href="reset-min.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="niftycube.js"></script> 
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
-	 $(function () {
-		 var tabContainers = $('div#device > div.main');
-		 tabContainers.hide().filter('#home').show();
+	 $(document).ready(function(){
+		 Nifty("div#main","big fixed-height");
 
 		 $('div#device ul#menu a').click(function () {
-			tabContainers.hide();
-			selected = tabContainers.filter(this.hash);
-			selected.load(this.id+'.htm').show();
+			$('#content').load(this.id+'.htm');
 			$('div#device ul#menu a').removeClass('selected');
 			$(this).addClass('selected');
 			return false;
-			}).filter('#home').click();
+			});
 		 });
-
- </script>
+</script>
 </head>
 
 <body>
  <div id="logo" class="verticaltext"><img src="logo.png" /></div>
  <div id="device">
-	<div id="status">
-	 Orario blabla
-	</div>
+	<div id="status">Orario blabla</div>
 	<ul id="menu">
 	 <li><a href="#home" id="home" class="selected"><span>Home</span></a></li>
 	 <li><a href="#mission" id="mission"><span>Mission</span></a></li>
@@ -41,12 +36,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	 <li><a href="#environment" id="environment"><span>Environment</span></a></li>
 	 <li><a href="#station" id="station"><span>Station</span></a></li>
 	</ul>
-	<div id="home" class="main"></div>
-	<div id="mission" class="main"></div>
-	<div id="channels" class="main"></div>
-	<div id="health" class="main"></div>
-	<div id="environment" class="main"></div>
-	<div id="station" class="main"></div>
+	<div id="main">
+	 <div id="content">dcsdcs
+		scdsdc
+		<br>dcscds</div>
  </div>
 </body>
  </html>
