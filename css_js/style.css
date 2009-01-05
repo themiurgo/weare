@@ -24,8 +24,8 @@ div#device {
 div#main {
  padding: 10px;
  margin-left:170px;
- margin-right:2px;
- margin-bottom:2px;
+ margin-right:5px;
+ margin-bottom:5px;
  background-color: #BFE4FF;
  color: #00487D;
 }
@@ -50,19 +50,20 @@ ul#menu {
 
 ul#menu li {
  position:relative;
- width: 148px;
+ width: 138px;
  height: 30px;
  margin: 4px 0 0 0;
  text-align: right;
  display: block;
  padding: 17px 20px 0px 0;
- border: 1px solid #FFFFFF;
+ border: 0px solid #FFFFFF;
+ left: 10px;
  background-color: #00487D;
 }
 
 ul#menu li.selected {
- width: 149px;
- border-right: none;
+ width: 145px;
+ left: 5px;
  color: #FF5E00;
  background-color: #BFE4FF;
 }
@@ -92,6 +93,10 @@ ul#menu li div.menu_icon {
  height: 40px;
  padding: 0;
  margin: 0;position: absolute; left: 10px; top: 12px;
+}
+
+ul#menu li.selected div.menu_icon {
+ left: 15px;
 }
 
 ul#menu li#mission div.menu_icon {
