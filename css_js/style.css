@@ -1,3 +1,15 @@
+/* Colori da usare
+ * Tonalità
+ * Blu
+ * Azzurro
+ * Arancione
+ * Rosso
+ *
+ *
+ *
+ */
+
+
 body {
  font-family: Helvetica;
 }
@@ -14,8 +26,8 @@ div#main {
  margin-left:170px;
  margin-right:2px;
  margin-bottom:2px;
- color: #BFE4FF;
- background-color: #00487D;
+ background-color: #BFE4FF;
+ color: #00487D;
 }
 
 div#content {
@@ -45,14 +57,14 @@ ul#menu li {
  display: block;
  padding: 17px 20px 0px 0;
  border: 1px solid #FFFFFF;
- background-color: #BFE4FF;
+ background-color: #00487D;
 }
 
 ul#menu li.selected {
  width: 149px;
  border-right: none;
  color: #FF5E00;
- background-color: #00487D;
+ background-color: #BFE4FF;
 }
 
 ul#menu li.selected a {
@@ -61,7 +73,7 @@ ul#menu li.selected a {
 }
 
 ul#menu li a {
- color: #0066B3;
+ color: #BFE4FF;
  display:block;
  height:45px;
  width:149px;
