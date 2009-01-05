@@ -110,6 +110,14 @@ ul#menu li#health.selected div.menu_icon {
  background: url('../graphics/health_on.png');
 }
 
+ul#menu li#station div.menu_icon {
+ background: url('../graphics/station_off.png');
+}
+
+ul#menu li#station.selected div.menu_icon {
+ background: url('../graphics/station_on.png');
+}
+
 div.verticaltext {
  position: absolute;
  right: 0;
