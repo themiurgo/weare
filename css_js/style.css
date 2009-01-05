@@ -37,36 +37,52 @@ ul#menu {
 }
 
 ul#menu li {
+ position:relative;
  width: 148px;
  height: 30px;
  margin: 4px 0 0 0;
  text-align: right;
  display: block;
  padding: 17px 20px 0px 0;
- text-decoration: none;
- text-transform: uppercase;
  border: 1px solid #FFFFFF;
  background-color: #BFE4FF;
 }
 
 ul#menu li.selected {
- width: 159px;
+ width: 149px;
  border-right: none;
  color: #FF5E00;
  background-color: #00487D;
- padding-right: 10px;
 }
 
 ul#menu li.selected a {
  color: #FF5E00;
+ padding-right:10px;
 }
 
 ul#menu li a {
  color: #0066B3;
+ display:block;
+ height:45px;
+ width:149px;
  position: relative;
  top:5px;
  font-weight: bold;
  font-size: 14px;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+ul#menu li#mission div.menu_icon {
+ background: url('../graphics/v_grey.png');
+ width: 40px;
+ height: 40px;
+ padding: 0;
+ margin: 0;position: absolute; left: 10px; top: 12px;
+}
+
+ul#menu li#mission.selected div.menu_icon {
+ background: url('../graphics/v_col.png');
 }
 
 div.verticaltext {
@@ -95,6 +111,7 @@ ul#tasks > li > a.selected {
  background: #FF5A00;
  height: 30px;
  margin-top: 10px;
+ margin-bottom: 10px;
 }
 
 ul#tasks > li > a.first {
