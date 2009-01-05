@@ -6,17 +6,17 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<title>
 	 WearE - Wearable computer Enhanced
 	</title>
-	<link rel="stylesheet" type="text/css" href="reset-min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" src="niftycube.js"></script> 
-	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css_js/reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="css_js/style.css" />
+	<script type="text/javascript" src="css_js/niftycube.js"></script> 
+	<script type="text/javascript" src="css_js/jquery.js"></script>
 	<script type="text/javascript">
 	 $(document).ready(function(){
 		 Nifty("div#main","big fixed-height");
 		 Nifty("ul#menu li","fixed-height left transparent");
 
 		 $('div#device ul#menu a').click(function () {
-			$('#content').load(this.id+'.htm');
+			$('#content').load('pages/'+this.id+'.htm');
 			$('div#device ul#menu li').removeClass('selected');
 			$('div#device ul#menu li#'+this.id).addClass('selected');
 			return false;
