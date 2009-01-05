@@ -36,10 +36,15 @@ div#content {
 }
 
 div#status {
- height: 25px;
+ height: 55px;
  font-weight: bold;
+ font-size:0.8em;
  padding: 4px;
  border: 1px solid #000000;
+}
+
+ul#time{
+ float:right;
 }
 
 ul#menu {
