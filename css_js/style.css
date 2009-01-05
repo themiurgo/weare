@@ -1,3 +1,7 @@
+body {
+ font-family: Helvetica;
+}
+
 div#device {
  width: 750px;
  height: 500px;
@@ -40,8 +44,6 @@ ul#menu li {
  display: block;
  padding: 17px 20px 0px 0;
  text-decoration: none;
- font-weight: bold;
- font-size: 14px;
  text-transform: uppercase;
  border: 1px solid #FFFFFF;
  background-color: #BFE4FF;
@@ -63,10 +65,46 @@ ul#menu li a {
  color: #0066B3;
  position: relative;
  top:5px;
+ font-weight: bold;
+ font-size: 14px;
 }
 
 div.verticaltext {
  position: absolute;
  right: 0;
  z-index: -2;
+}
+
+/* MISSION */
+
+ul#tasks > li > a {
+ font-weight: bold;
+ display: block;
+ color: #0066B3;
+ border: 3px solid #FF5A00;
+ background: #FFD080;
+ height: 30px;
+ padding:5px;
+ margin: 10px 5px 10px 5px;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+ul#tasks > li > a.selected {
+ color: #0066B3;
+ border: 3px solid #FF5A00;
+ background: #FF5A00;
+ height: 30px;
+ padding:5px;
+ margin: 10px 5px 10px 5px;
+}
+
+ul#tasks > li > ul > li {
+ margin-left: 30px;
+ list-style: circle;
+}
+
+ul#tasks > li > ul > li.selected {
+ margin-left: 30px;
+ list-style: disc;
 }

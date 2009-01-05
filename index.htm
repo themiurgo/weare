@@ -10,6 +10,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<link rel="stylesheet" type="text/css" href="css_js/style.css" />
 	<script type="text/javascript" src="css_js/niftycube.js"></script> 
 	<script type="text/javascript" src="css_js/jquery.js"></script>
+	<script type="text/javascript" src="css_js/jquery-ui.js"></script>
 	<script type="text/javascript">
 	 $(document).ready(function(){
 		 Nifty("div#main","big fixed-height");
@@ -19,6 +20,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			$('#content').load('pages/'+this.id+'.htm');
 			$('div#device ul#menu li').removeClass('selected');
 			$('div#device ul#menu li#'+this.id).addClass('selected');
+            mission()
 			return false;
 			});
 		 });
