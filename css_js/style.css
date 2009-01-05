@@ -85,7 +85,6 @@ ul#tasks > li > a {
  background: #FFD080;
  height: 30px;
  padding:5px;
- margin: 10px 5px 10px 5px;
  text-transform: uppercase;
  text-decoration: none;
 }
@@ -95,13 +94,21 @@ ul#tasks > li > a.selected {
  border: 3px solid #FF5A00;
  background: #FF5A00;
  height: 30px;
- padding:5px;
- margin: 10px 5px 10px 5px;
+ margin-top: 10px;
+}
+
+ul#tasks > li > a.first {
+ margin-top:0px;
+}
+
+ul#tasks > li > ul  {
+ margin: 0px 0 10px 0;
 }
 
 ul#tasks > li > ul > li {
  margin-left: 30px;
  list-style: circle;
+ margin-bottom: 10px;
 }
 
 ul#tasks > li > ul > li.selected {
