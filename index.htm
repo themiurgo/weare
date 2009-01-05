@@ -11,10 +11,14 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script type="text/javascript" src="css_js/niftycube.js"></script> 
 	<script type="text/javascript" src="css_js/jquery.js"></script>
 	<script type="text/javascript" src="css_js/jquery-ui.js"></script>
+	<script type="text/javascript" src="css_js/functions.js"></script>
 	<script type="text/javascript">
 	 $(document).ready(function(){
 		 Nifty("div#main","big fixed-height");
 		 Nifty("ul#menu li","fixed-height left transparent");
+
+                 $("#UTCTime").ready(showUTC());
+                 //$("#startTime").ready(showUTC());
 
 		 $('div#device ul#menu a').click(function () {
 			$('#content').load('pages/'+this.id+'.htm');
@@ -30,7 +34,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <body>
  <div id="logo" class="verticaltext"><img src="logo.png" /></div>
  <div id="device">
-  <div id="status">Orario blabla</div>
+  <div id="status"> 
+   <div id="UTCTime"></div>
+   <div id="startTime"></div> 
+  </div>
 	<ul id="menu">
      <li id="home" class="selected">
       <a href="#home" id="home">Home</a></li>
