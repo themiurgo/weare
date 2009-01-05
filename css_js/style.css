@@ -85,16 +85,29 @@ ul#menu li a {
  text-decoration: none;
 }
 
-ul#menu li#mission div.menu_icon {
- background: url('../graphics/mission_off.png');
+/* MENU ICONS */
+
+ul#menu li div.menu_icon {
  width: 40px;
  height: 40px;
  padding: 0;
  margin: 0;position: absolute; left: 10px; top: 12px;
 }
 
+ul#menu li#mission div.menu_icon {
+ background: url('../graphics/mission_off.png');
+}
+
 ul#menu li#mission.selected div.menu_icon {
  background: url('../graphics/mission_on.png');
+}
+
+ul#menu li#health div.menu_icon {
+ background: url('../graphics/health_off.png');
+}
+
+ul#menu li#health.selected div.menu_icon {
+ background: url('../graphics/health_on.png');
 }
 
 div.verticaltext {
