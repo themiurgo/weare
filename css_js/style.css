@@ -55,19 +55,19 @@ ul#menu {
 
 ul#menu li {
  position:relative;
- width: 138px;
- height: 30px;
+ width: 160px;
+ height: auto;
  margin: 4px 0 0 0;
  text-align: right;
  display: block;
- padding: 17px 20px 0px 0;
+ padding: 0 0 0 0;
  border: 0px solid #FFFFFF;
  left: 10px;
  background-color: #00487D;
 }
 
 ul#menu li.selected {
- width: 145px;
+ width: 165px;
  left: 5px;
  color: #FF5E00;
  background-color: #BFE4FF;
@@ -75,18 +75,18 @@ ul#menu li.selected {
 
 ul#menu li.selected a {
  color: #FF5E00;
- padding-right:10px;
+ left: 5px;
 }
 
 ul#menu li a {
  color: #BFE4FF;
  display:block;
- height:45px;
+ height:20px;
  width:149px;
  position: relative;
- top:5px;
  font-weight: bold;
  font-size: 14px;
+ padding: 20px 0 20px 0;
  text-transform: uppercase;
  text-decoration: none;
 }
@@ -97,7 +97,7 @@ ul#menu li div.menu_icon {
  width: 40px;
  height: 40px;
  padding: 0;
- margin: 0;position: absolute; left: 10px; top: 12px;
+ margin: 0;position: absolute; left: 10px; top: 10px;
 }
 
 ul#menu li.selected div.menu_icon {
