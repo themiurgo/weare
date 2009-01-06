@@ -12,6 +12,7 @@
 
 body {
  font-family: Helvetica;
+ font-size: 16px;
 }
 
 div#device {
@@ -33,6 +34,7 @@ div#main {
 }
 
 div#content {
+ position: relative;
  height: 415px;
  border: 0px solid #000000;
 }
@@ -58,6 +60,7 @@ div#chColumn2{
 ul#time{
  float:right;
  font-size: 2ex;
+ font-weight: bold;
  font-family: 'Courier New', 'Lucida Console', monospace;
 }
 
@@ -95,12 +98,12 @@ ul#menu li.selected a {
 ul#menu li a {
  color: #BFE4FF;
  display:block;
- height:20px;
+ height:18px;
  width:149px;
  position: relative;
  font-weight: bold;
- font-size: 14px;
- padding: 20px 10px 20px 0;
+ font-size: 0.9em;
+ padding: 22px 0px 20px 0;
  text-transform: uppercase;
  text-decoration: none;
 }
@@ -150,6 +153,10 @@ div.verticaltext {
 
 /* MISSION */
 
+ul#tasks {
+		width: 85%;
+}
+
 ul#tasks > li > a {
  font-weight: bold;
  display: block;
@@ -188,4 +195,24 @@ ul#tasks > li > ul > li {
 ul#tasks > li > ul > li.selected {
  margin-left: 30px;
  list-style: disc;
+}
+
+div.slider {
+		width: 60px;
+		height: 100%;
+		position: absolute;
+		right: 10px;
+		top: 0px;
+}
+
+div.slider img#up {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+}
+
+div.slider img#down {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
 }

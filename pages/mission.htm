@@ -1,7 +1,12 @@
 <script type="text/javascript">
    $(document).ready(function(){
-    $("#tasks").accordion(); 
+    a = $("#tasks").accordion(); 
+		$("#down").click(function() {
+		     a.activate('ul + ul');
+		 });
   });
+
+
  </script>
 
  <div>
@@ -39,4 +44,8 @@
  </ul>
  </li>
 </ul>
+<div class="slider">
+ <img src="graphics/go_up.png" id="up" />
+ <img src="graphics/go_down.png" id="down" />
+</div>
 </div>
