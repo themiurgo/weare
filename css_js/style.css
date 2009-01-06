@@ -184,7 +184,6 @@ ul#tasks > li > a.first {
 }
 
 ul#tasks > li > a.last {
- margin-top:0px;
  border-bottom: 3px solid #FF5A00;
 }
 
