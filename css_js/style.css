@@ -59,6 +59,9 @@ div#chColumn2{
 
 ul#time{
  float:right;
+ text-align: right;
+ background: url("../graphics/clock.png") no-repeat;
+ width: 200px;
  font-size: 2ex;
  font-weight: bold;
  font-family: 'Courier New', 'Lucida Console', monospace;
@@ -184,7 +187,6 @@ ul#tasks > li > a.first {
 }
 
 ul#tasks > li > a.last {
- border-bottom: 3px solid #FF5A00;
 }
 
 ul#tasks > li > ul  {

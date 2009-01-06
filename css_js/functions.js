@@ -21,7 +21,7 @@ function showUTC(){
     seconds=addZero(seconds)
   
     var div = document.getElementById("UTCTime")
-    div.innerHTML="(GMT) +"+hours+":"+minutes+":"+seconds
+    div.innerHTML="NOW GMT +"+hours+":"+minutes+":"+seconds
     
     setTimeout("showUTC()",1000)
 }
@@ -49,7 +49,7 @@ function showStart() {
     var stringHours=addZero(startHours)
     
     var start = document.getElementById("startTime")
-    start.innerHTML="(SRT) +"+stringHours+":"+stringMin+":"+stringSec
+    start.innerHTML="ELAPSED +"+stringHours+":"+stringMin+":"+stringSec
     setTimeout("showStart()",1000)
 }
 
@@ -70,6 +70,6 @@ function showEnd(){
     var stringHours=addZero(endHours)
     
     var end = document.getElementById("endTime")
-   end.innerHTML="(END)  -"+stringHours+":"+stringMin+":"+stringSec
+   end.innerHTML="CNTDOWN  -"+stringHours+":"+stringMin+":"+stringSec
     setTimeout("showEnd()",1000)
 }

@@ -1,8 +1,15 @@
 <script type="text/javascript">
    $(document).ready(function(){
-    a = $("#tasks").accordion(); 
+    a = $("ul#tasks").accordion(); 
+
+		$("ul#tasks > li > a").filter(':last').css('border-bottom','3px solid #ff5a00');
 
 		/* Slider functions */
+
+		$("ul#tasks").bind("accordionchange", function(event, ui) {
+		 $('ul#tasks > li >	a').filter(":not(:last)").css('border-bottom','none');
+		 $('ul#tasks > li >	a.selected').parent().prev().children('a').css('border-bottom','3px solid #ff5a00');
+});
 
 		$("#down").click(function() {
 		 b = $('ul#tasks > li > a.selected').parent().next().children('a');
@@ -45,7 +52,7 @@
  </ul>
  </li>
  <li>
- <a href='#'>Task 4</a>
+ <a href='#' class="last">Task 4</a>
  <ul class="steps">
 	<li>Step 1</li>
 	<li>Step 2</li>
