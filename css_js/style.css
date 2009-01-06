@@ -17,8 +17,10 @@ body {
 div#device {
  width: 750px;
  height: 500px;
- border: 1px solid #000000;
+ border: 1px solid red;
  margin: 10px auto;
+ background: #000;
+ color: #fff;
 }
 
 div#main {
@@ -39,8 +41,8 @@ div#status {
  height: 50px;
  font-weight: bold;
  font-size:0.8em;
- padding: 4px;
- border: 1px solid #000000;
+ padding: 4px 5px 4px 5px;
+ border: 0px solid #000000;
 }
 
 ul#time{
@@ -88,7 +90,7 @@ ul#menu li a {
  position: relative;
  font-weight: bold;
  font-size: 14px;
- padding: 20px 0 20px 0;
+ padding: 20px 10px 20px 0;
  text-transform: uppercase;
  text-decoration: none;
 }
