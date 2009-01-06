@@ -31,12 +31,12 @@ div#main {
 }
 
 div#content {
- height: 440px;
+ height: 415px;
  border: 0px solid #000000;
 }
 
 div#status {
- height: 55px;
+ height: 50px;
  font-weight: bold;
  font-size:0.8em;
  padding: 4px;
@@ -45,6 +45,8 @@ div#status {
 
 ul#time{
  float:right;
+ font-size: 2ex;
+ font-family: 'Courier New', 'Lucida Console', monospace;
 }
 
 ul#menu {
