@@ -73,5 +73,3 @@ function showEnd(){
    end.innerHTML="(END)  -"+stringHours+":"+stringMin+":"+stringSec
     setTimeout("showEnd()",1000)
 }
-
-
