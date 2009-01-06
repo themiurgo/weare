@@ -162,6 +162,7 @@ ul#tasks > li > a {
  display: block;
  color: #0066B3;
  border: 3px solid #FF5A00;
+ border-bottom: none;
  background: #FFD080;
  height: 30px;
  padding:5px;
@@ -180,6 +181,11 @@ ul#tasks > li > a.selected {
 
 ul#tasks > li > a.first {
  margin-top:0px;
+}
+
+ul#tasks > li > a.last {
+ margin-top:0px;
+ border-bottom: 3px solid #FF5A00;
 }
 
 ul#tasks > li > ul  {
