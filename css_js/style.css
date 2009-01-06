@@ -45,6 +45,16 @@ div#status {
  border: 0px solid #000000;
 }
 
+div#chColumn1{
+ float:left;
+ margin-left: 30px;
+ margin-right: 45px;
+}
+
+div#chColumn2{
+ float:left;
+}
+
 ul#time{
  float:right;
  font-size: 2ex;
