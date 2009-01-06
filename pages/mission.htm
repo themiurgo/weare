@@ -1,8 +1,17 @@
 <script type="text/javascript">
    $(document).ready(function(){
     a = $("#tasks").accordion(); 
+
+		/* Slider functions */
+
 		$("#down").click(function() {
-		     a.activate('ul + ul');
+		 b = $('ul#tasks > li > a.selected').parent().next().children('a');
+		 a.activate(b);
+		 });
+
+		$("#up").click(function() {
+		 b = $('ul#tasks > li > a.selected').parent().prev().children('a');
+		 a.activate(b);
 		 });
   });
 
@@ -45,7 +54,7 @@
  </li>
 </ul>
 <div class="slider">
- <img src="graphics/go_up.png" id="up" />
- <img src="graphics/go_down.png" id="down" />
+ <a href="#"><img src="graphics/go_up.png" id="up" /></a>
+ <a href="#"><img src="graphics/go_down.png" id="down" /></a>
 </div>
 </div>
