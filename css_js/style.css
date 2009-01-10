@@ -132,6 +132,14 @@ ul#menu li#mission.selected div.menu_icon {
  background: url('../graphics/mission_on.png');
 }
 
+ul#menu li#home div.menu_icon {
+ background: url('../graphics/home_off.png');
+}
+
+ul#menu li#home.selected div.menu_icon {
+ background: url('../graphics/home_on.png');
+}
+
 ul#menu li#health div.menu_icon {
  background: url('../graphics/health_off.png');
 }
@@ -140,12 +148,19 @@ ul#menu li#health.selected div.menu_icon {
  background: url('../graphics/health_on.png');
 }
 
+ul#menu li#environment div.menu_icon {
+ background: url('../graphics/env_off.png');
+}
+
+ul#menu li#environment.selected div.menu_icon {
+ background: url('../graphics/env_on.png');
+}
 ul#menu li#station div.menu_icon {
- background: url('../graphics/station_off.png');
+ background: url('../graphics/station_alert.png');
 }
 
 ul#menu li#station.selected div.menu_icon {
- background: url('../graphics/station_on.png');
+ background: url('../graphics/station_alert.png');
 }
 
 div.verticaltext {
