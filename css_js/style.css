@@ -155,12 +155,21 @@ ul#menu li#environment div.menu_icon {
 ul#menu li#environment.selected div.menu_icon {
  background: url('../graphics/env_on.png');
 }
+
 ul#menu li#station div.menu_icon {
  background: url('../graphics/station_alert.png');
 }
 
 ul#menu li#station.selected div.menu_icon {
  background: url('../graphics/station_alert.png');
+}
+
+ul#menu li#channels div.menu_icon {
+ background: url('../graphics/channels_off.png');
+}
+
+ul#menu li#channels.selected div.menu_icon {
+ background: url('../graphics/channels_on.png');
 }
 
 div.verticaltext {
