@@ -51,24 +51,29 @@ div#chColumn1{
  float:left;
  margin-left: 30px;
  margin-right: 45px;
- font-weight: bold;
 }
 
 div#chColumn2{
  float:left;
 }
-span.name22{
- position: relative;
- left: 5.5em;
-//float: right;
-}
+
 span.name{
  position: relative;
- left: 5.5em;
-//float: right;
+ left: 6.8em;
+
 }
 
-div.connected{
+.audioImg{
+ float: left;
+}
+
+.audioStatus{
+ position: relative;
+ left: 2em;
+ top: 0.1em;
+}
+
+.connected{
  font-weight: bold;
 }
 
