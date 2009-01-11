@@ -1,15 +1,22 @@
 <script type="text/javascript">
-  
+ 
+ //Cliccando sull'immagine, simula la connessione/disconnessione   
  $(document).ready(function(){
   $('.channelsImg').click(function () {
-                     
-                        $('div#'+this.id).removeClass('connected');
-                        $('div#'+this.id).addClass('disconnected');
-                       $('span#'+this.id+'-s').html('Disconnected<br> +00:00:00<br>'); 
-           
-                    
-                        });
-                 });
+     
+    if ( $('div#'+this.id).hasClass('connected')) {  
+     $('div#'+this.id).removeClass('connected');
+     $('div#'+this.id).addClass('disconnected');
+     $('span#'+this.id+'-s').html('Disconnected<br> +00:00:00<br>'); 
+    } else {
+     $('div#'+this.id).removeClass('disconnected');
+     $('div#'+this.id).addClass('connected');
+     $('span#'+this.id+'-s').html('Connected<br> +00:00:00<br>'); 
+    }
+    
+   });
+  });
+
 </script>
 
 <div>
@@ -23,23 +30,23 @@
    <span id="cell1-s" class="audioStatus"> Connected <br> +00:03:27 <br> </span>
   </div>
 
-  <span class="disconnected">
+  <div id="cell2" class="disconnected">
    Live <span class="name">Station</span><br>
-   <img src="./graphics/base2.jpg" /> <br>
+   <img src="./graphics/base2.jpg" id="cell2" class="channelsImg"/> <br>
    <img class="audioImg" src="./graphics/audio.png" />
-   <span class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
-  </span>
+   <span id="cell2-s" class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
+  </div>
 
  </div>
  
  <div id="chColumn2">
   
-  <span class="disconnected">
+  <div id="cell3" class="disconnected">
    Live <span class="name">C. Smith</span><br>
-   <img src="./graphics/astro2.jpg" /> <br>
+   <img src="./graphics/astro2.jpg" id="cell3" class="channelsImg"> <br>
    <img class="audioImg" src="./graphics/audio.png" />
-   <span class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
-  </span>
+   <span id="cell3-s" class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
+  </div>
 
   <div id="cell4" class="connected">
    Live <span class="name">Houston</span><br>
