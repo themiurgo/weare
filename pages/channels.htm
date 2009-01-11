@@ -1,13 +1,27 @@
+<script type="text/javascript">
+  
+ $(document).ready(function(){
+  $('.channelsImg').click(function () {
+                     
+                        $('div#'+this.id).removeClass('connected');
+                        $('div#'+this.id).addClass('disconnected');
+                       $('span#'+this.id+'-s').html('Disconnected<br> +00:00:00<br>'); 
+           
+                    
+                        });
+                 });
+</script>
+
 <div>
  
  <div id="chColumn1">   
   
-  <span class="connected">
+  <div id="cell1" class="connected">
    Live <span class="name">S. Scott</span><br>
-   <img src="./graphics/astro1.jpg" /> <br>
+   <img src="./graphics/astro1.jpg" id="cell1" class="channelsImg" /> <br>
    <img class="audioImg" src="./graphics/audio.png" />
-   <span class="audioStatus"> Connected <br> +00:03:27 <br> </span>
-  </span>
+   <span id="cell1-s" class="audioStatus"> Connected <br> +00:03:27 <br> </span>
+  </div>
 
   <span class="disconnected">
    Live <span class="name">Station</span><br>
@@ -27,12 +41,12 @@
    <span class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
   </span>
 
-  <span class="connected">
+  <div id="cell4" class="connected">
    Live <span class="name">Houston</span><br>
-   <img src="./graphics/base1.jpg" /> <br>
+   <img id="cell4" class="channelsImg" src="./graphics/base1.jpg" /> <br>
    <img class="audioImg" src="./graphics/audio.png" />
-   <span class="audioStatus">Connected <br> +00:03:07 <br> </span>
-  </span>
+   <span id="cell4-s" class="audioStatus">Connected <br> +00:03:07 <br> </span>
+  </div>
 
  </div>
  
