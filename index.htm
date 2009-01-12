@@ -2,101 +2,93 @@
 PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
- <head>
-	<title>
-	 WearEb - Wearable computer Enhanced
-	</title>
-        
-        <link rel="stylesheet" type="text/css" href="./css_js/reset-min.css" />
-	<link rel="stylesheet" type="text/css" href="./css_js/style.css" />
+  <head>
+    <title>
+      WearE - Wearable computer Enhanced
+    </title>
 
-	
-        <script type="text/javascript" src="./css_js/niftycube.js"></script> 
-	<script type="text/javascript" src="./css_js/jquery-1.2.6.js"></script>
-	<script type="text/javascript" src="./css_js/jquery-ui.js"></script>
-        <script type="text/javascript" src="./css_js/ui.slider.js"></script>
-        <script type="text/javascript" src="./css_js/functions.js"></script>
-   
+    <link rel="stylesheet" type="text/css" href="./css_js/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css_js/style.css" />
 
-        <script type="text/javascript">
-	 $(document).ready(function(){
+    <script type="text/javascript" src="./css_js/niftycube.js"></script> 
+    <script type="text/javascript" src="./css_js/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="./css_js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./css_js/ui.slider.js"></script>
+    <script type="text/javascript" src="./css_js/functions.js"></script>
 
+    <script type="text/javascript">
+      $(document).ready(function(){
+          Nifty("div#main","big fixed-height");
+          Nifty("ul#menu li","fixed-height left transparent");
 
-	
-		 Nifty("div#main","big fixed-height");
-		 Nifty("ul#menu li","fixed-height left transparent");
-                 
-                 //Mostra gli orari 
-                 showUTC();
-                 showStart();
-                 showEnd();
-                 
-         $('#content').load('pages/home.htm');
+          //Mostra gli orari 
+          showUTC();
+          showStart();
+          showEnd();
 
-		 $('div#device ul#menu a').click(function () {
-			$('#content').load('pages/'+this.id+'.htm');
-			$('div#device ul#menu li').removeClass('selected');
-			$('div#device ul#menu li#'+this.id).addClass('selected');
+          $('#content').load('pages/home.htm');
+
+          $('div#device ul#menu a').click(function () {
+            $('#content').load('pages/'+this.id+'.htm');
+            $('div#device ul#menu li').removeClass('selected');
+            $('div#device ul#menu li#'+this.id).addClass('selected');
             mission()
-			return false;
-			});
-		 });
-
-      
-</script>
-</head>
-<body>
- <div id="logo" class="verticaltext"><img src="graphics/logo.png" /></div>
- <div id="device">
-     
-  <div id="status">
-   <span class="battery" id="fuel">
-<img src="graphics/BatteryLow.png" /> <br> <span id="fText"> Fuel </span>
-   </span>
-    <span class="battery" id="oxygen">
-    <img src="graphics/BatteryFull.png" /> <br> <span id="oText"> Oxygen </span>
-   </span>
-   <span class="battery" id="sensors">
-<img src="graphics/BatteryMedium.png" /><br> <span id="sText"> Sensors</span>
-   </span>
-   
-
-   <ul id="time">
-    <li id="UTCTime"></li>
-    <li id="startTime"></li> 
-    <li id="endTime"></li>
-   </ul> 
-  </div>
-	<ul id="menu">
-     <li id="home" class="selected">
-      <div class="menu_icon"></div>
-      <a href="#home" id="home">Home</a></li>
-     <li id="mission">
-      <div class="menu_icon"></div>
-     <a href="#mission" id="mission">
-         Mission</a></li>
-		 <li id="channels">
-     <div class="menu_icon"></div>
-		 <a href="#channels" id="channels"><span>Channels</span></a>
-		 </li>
-     <li id="health">
-     <div class="menu_icon"></div>
-		 <a href="#health" id="health">Health</a>
-		 </li>
-		 <li id="environment">
-     <div class="menu_icon"></div>
-				 <a href="#environment" id="environment"><span>Environs</span></a></li>
-     <li id="station">
-     <div class="menu_icon"></div>
-     <a href="#station" id="station">Station</a>
-     </li>
-	</ul>
-	<div id="main">
-	 <div id="content"></div>
-
-
-
-
-
-</body>
- </html>
+            return false;
+            });
+          });
+    </script>
+  </head>
+  <body>
+    <div id="logo" class="verticaltext"><img src="graphics/logo.png" /></div>
+    <div id="device">
+      <div id="status">
+        <span class="battery" id="fuel">
+          <img src="graphics/BatteryLow.png" /><br />
+          <span id="fText"> Fuel </span>
+        </span>
+        <span class="battery" id="oxygen">
+          <img src="graphics/BatteryFull.png" /><br />
+          <span id="oText"> Oxygen </span>
+        </span>
+        <span class="battery" id="sensors">
+          <img src="graphics/BatteryMedium.png" /><br />
+          <span id="sText"> Sensors</span>
+        </span>
+        
+        <ul id="time">
+          <li id="UTCTime"></li>
+          <li id="startTime"></li> 
+          <li id="endTime"></li>
+        </ul> 
+      </div>
+      <ul id="menu">
+        <li id="home" class="selected">
+          <div class="menu_icon"></div>
+          <a href="#home" id="home">Home</a>
+        </li>
+        <li id="mission">
+          <div class="menu_icon"></div>
+          <a href="#mission" id="mission">Mission</a>
+        </li>
+        <li id="channels">
+            <div class="menu_icon"></div>
+            <a href="#channels" id="channels"><span>Channels</span></a>
+        </li>
+        <li id="health">
+          <div class="menu_icon"></div>
+          <a href="#health" id="health">Health</a>
+        </li>
+        <li id="environment">
+          <div class="menu_icon"></div>
+          <a href="#environment" id="environment"><span>Environs</span></a></li>
+        <li id="station">
+          <div class="menu_icon"></div>
+          <a href="#station" id="station">Station</a>
+        </li>
+      </ul>
+      <div id="main">
+        <div id="content"></div>
+      </div>
+    </div>
+  </body>
+</html>
