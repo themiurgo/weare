@@ -77,6 +77,24 @@ span.name{
  font-weight: bold;
 }
 
+#sliderBar{
+ margin: 30px 15px; 
+ width: 50px; 
+ height: 380px; 
+ background: #2B65EC;
+}
+
+#sliderRect{
+ position : relative; 
+ margin: -0.6em; 
+ z-index: 1; 
+ background: #15317E; 
+ width: 140%; 
+ height: 27px; 
+ top: 160px;
+}
+
+
 
 ul#time{
  float:right;

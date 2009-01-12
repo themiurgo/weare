@@ -1,7 +1,15 @@
 <script type="text/javascript">
  
+
+
  //Cliccando sull'immagine, simula la connessione/disconnessione   
  $(document).ready(function(){
+  
+
+$('#sliderBar').slider({ steps: 10, range: true, change: function(e,ui) { console.log(ui.range); } });
+
+
+  
   $('.channelsImg').click(function () {
      
     if ( $('div#'+this.id).hasClass('connected')) {  
@@ -15,6 +23,7 @@
     }
     
    });
+       
   });
 
 </script>
@@ -54,7 +63,20 @@
    <img class="audioImg" src="./graphics/audio.png" />
    <span id="cell4-s" class="audioStatus">Connected <br> +00:03:07 <br> </span>
   </div>
-
+</div> 
+ <div class="slider">
+  <div class="playground">
+   <div id="sliderBar">
+    <div class='ui-slider-handle' id="sliderRect"></div>
+   </div>	
+  </div>
  </div>
+</div>
+
+  
+
+
+
+
  
 </div>
