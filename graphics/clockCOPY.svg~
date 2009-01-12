@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="200"
+   height="200"
+   viewBox="0 0 2.02 2.02"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+  </defs>
+  <path
+     d="M 1.01,0.01 C 1.5622847,0.01 2.01,0.45771525 2.01,1.01 C 2.01,1.5622847 1.5622847,2.01 1.01,2.01 C 0.45771525,2.01 0.01,1.5622847 0.01,1.01 C 0.01,0.45771525 0.45771525,0.01 1.01,0.01 M 1.01,0.01 L 1.01,0.11 M 1.51,0.144 L 1.46,0.231 M 1.876,0.51 L 1.789,0.56 M 2.01,1.01 L 1.91,1.01 M 1.876,1.51 L 1.789,1.46 M 1.51,1.876 L 1.46,1.789 M 1.01,2.01 L 1.01,1.91 M 0.51,1.876 L 0.56,1.789 M 0.144,1.51 L 0.231,1.46 M 0.01,1.01 L 0.11,1.01 M 0.144,0.51 L 0.231,0.56 M 0.51,0.144 L 0.56,0.231"
+     id="path10"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.021008;stroke-miterlimit:4;stroke-dasharray:none" />
+  <line
+     style="stroke:#000000;stroke-width:0.08;stroke-linecap:round"
+     y2="0.61047125"
+     x2="0.99058902"
+     y1="1.01"
+     x1="1.01"
+     id="hours" />
+  <line
+     style="stroke:#000000;stroke-width:0.05;stroke-linecap:round"
+     y2="0.46721214"
+     x2="0.65239495"
+     y1="1.01"
+     x1="1.01"
+     id="minutes" />
+  <line
+     style="stroke:#000000;stroke-width:0.02;stroke-linecap:round"
+     y2="1.8403691"
+     x2="1.3571125"
+     y1="1.01"
+     x1="1.01"
+     id="seconds" />
+</svg>

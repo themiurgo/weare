@@ -120,20 +120,16 @@ span.name{
  border: 1px ridge #2B65EC;
 }
 
-#audioBar{
- position: relative;
- left: 20px;
- width: 35px;
- height: 50px;
+img#audioBar {
+ position: absolute;
+ right: 6px;
 }
 
 .left{
- 
  float:left;
 }
 
 .right{
-
 float:right;
 margin-left: 20px;
 }
@@ -205,7 +201,7 @@ ul#menu li.selected a {
 ul#menu li a {
  color: #BFE4FF;
  display:block;
- height:18px;
+ height:22px;
  width:149px;
  position: relative;
  font-weight: bold;
@@ -221,7 +217,7 @@ ul#menu li div.menu_icon {
  width: 40px;
  height: 40px;
  padding: 0;
- margin: 0;position: absolute; left: 10px; top: 10px;
+ margin: 0;position: absolute; left: 10px; top: 12px;
 }
 
 ul#menu li.selected div.menu_icon {
@@ -305,7 +301,6 @@ ul#tasks > li > a.selected {
  color: #0066B3;
  border: 3px solid #FF5A00;
  background: #FF5A00;
- height: 30px;
  margin-top: 10px;
  margin-bottom: 10px;
 }
@@ -350,4 +345,33 @@ div.slider img#down {
 		position: absolute;
 		bottom: 0px;
 		right: 0px;
+}
+
+/* HOME */
+
+div.sidebar {
+ border: 1px solid #000000;
+ width: 250px;
+ height: 412px;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+div#video {
+ background: #000;
+ width: 240px;
+ height: 180px;
+ position: absolute;
+ top: 0;
+ right: 5px;
+}
+
+div#events {
+ border: 1px solid #000000;
+ width: 300px;
+ height: 412px;
+ position: absolute;
+ left: 0;
+ top: 0;
 }
