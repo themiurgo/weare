@@ -94,7 +94,12 @@ span.name{
  top: 160px;
 }
 
+#panel{
+ border: 2px solid #000000;
+ padding-left: 15px;
+ padding-bottom: 5px;
 
+}
 
 ul#time{
  float:right;

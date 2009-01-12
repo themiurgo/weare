@@ -30,8 +30,8 @@ var startHours = 0;
 var startMin = 0;
 var startSec = 0;
 var endHours = 1;
-var endMin = 1;
-var endSec = 3;
+var endMin = 3;
+var endSec = 45;
 
 function showStart() {
    
@@ -54,7 +54,11 @@ function showStart() {
 }
 
 function showEnd(){
-    
+   if (endMin==0 && endSec==0 && endHours==0) {
+    var stringSec="00"
+    var stringMin="00"
+    var stringHours="00"
+   } else {
     endSec = endSec-1
    if (endSec==-1) {
      endSec=59
@@ -68,7 +72,7 @@ function showEnd(){
     var stringSec=addZero(endSec)
     var stringMin=addZero(endMin)
     var stringHours=addZero(endHours)
-    
+    }
     var end = document.getElementById("endTime")
    end.innerHTML="CNTDOWN  -"+stringHours+":"+stringMin+":"+stringSec
     setTimeout("showEnd()",1000)
