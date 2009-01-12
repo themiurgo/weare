@@ -17,9 +17,9 @@ body {
 
 div#device {
  width: 750px;
- height: 500px;
+ height: 515px;
  border: 1px solid red;
- margin: 10px auto;
+ margin: 12px auto;
  background: #000;
  color: #fff;
 }
@@ -35,11 +35,13 @@ div#main {
 
 div#content {
  position: relative;
- height: 415px;
+ top: 5px;
+ height: 425px;
  border: 0px solid #000000;
 }
 
 div#status {
+
  height: 50px;
  font-weight: bold;
  font-size:0.8em;
@@ -47,6 +49,28 @@ div#status {
  border: 0px solid #000000;
 }
 
+#fText{
+ color: #CC0000;
+ position: relative;
+ left: 22px;
+}
+
+#oText{
+ color: #003399;
+ position: relative;
+ left: 11px;
+}
+
+#sText{
+ color: #33FF00;
+ position: relative;
+ left: 15px;
+}
+
+.battery{
+ float:left;
+ padding: 2px 20px;
+}
 div#chColumn1{
  float:left;
  margin-left: 30px;
@@ -112,6 +136,7 @@ ul#time{
 }
 
 ul#menu {
+ clear:left;
  float:left;
  position:relative;
  top: 14px;
