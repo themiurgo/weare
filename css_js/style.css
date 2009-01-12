@@ -102,10 +102,11 @@ span.name{
 }
 
 #sliderBar{
- margin: 30px 15px; 
+ margin: 20px 15px 0px; 
  width: 50px; 
- height: 380px; 
+ height: 360px; 
  background: #2B65EC;
+ border: 2px solid #15317E;
 }
 
 #sliderRect{
@@ -116,7 +117,41 @@ span.name{
  width: 140%; 
  height: 27px; 
  top: 160px;
+ border: 1px ridge #2B65EC;
 }
+
+#audioBar{
+ position: relative;
+ left: 20px;
+ width: 35px;
+ height: 50px;
+}
+
+.left{
+ 
+ float:left;
+}
+
+.right{
+
+float:right;
+margin-left: 20px;
+}
+
+.param{
+ clear: left;
+ clear: right;
+ margin: 20px 20px 20px;
+}
+
+.heal{ 
+ font-weight: bold;
+ font-size: 1.2em;
+ position: relative;
+ left: 20px;
+ padding-bottom: 30 px;
+}
+
 
 #panel{
  border: 2px solid #000000;
