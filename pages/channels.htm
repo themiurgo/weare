@@ -34,14 +34,16 @@ $('#sliderBar').slider({ steps: 10, range: true, change: function(e,ui) { consol
   
   <div id="cell1" class="connected">
    Live <span class="name">S. Scott</span><br>
-   <img src="./graphics/astro1.jpg" id="cell1" class="channelsImg" /> <br>
+   <a href="#">
+   <img src="./graphics/astro1.jpg" id="cell1" class="channelsImg" /> </a><br>
    <img class="audioImg" src="./graphics/audio.png" />
    <span id="cell1-s" class="audioStatus"> Connected <br> +00:03:27 <br> </span>
   </div>
 
   <div id="cell2" class="disconnected">
    Live <span class="name">Station</span><br>
-   <img src="./graphics/base2.jpg" id="cell2" class="channelsImg"/> <br>
+   <a href="#">
+   <img src="./graphics/base2.jpg" id="cell2" class="channelsImg"/></a> <br>
    <img class="audioImg" src="./graphics/audio.png" />
    <span id="cell2-s" class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
   </div>
@@ -52,14 +54,16 @@ $('#sliderBar').slider({ steps: 10, range: true, change: function(e,ui) { consol
   
   <div id="cell3" class="disconnected">
    Live <span class="name">C. Smith</span><br>
-   <img src="./graphics/astro2.jpg" id="cell3" class="channelsImg"> <br>
+   <a href="#">
+   <img src="./graphics/astro2.jpg" id="cell3" class="channelsImg"></a> <br>
    <img class="audioImg" src="./graphics/audio.png" />
    <span id="cell3-s" class="audioStatus"> Disconnected <br> +00:00:00 <br> </span>
   </div>
 
   <div id="cell4" class="connected">
    Live <span class="name">Houston</span><br>
-   <img id="cell4" class="channelsImg" src="./graphics/base1.jpg" /> <br>
+   <a href="#">
+   <img id="cell4" class="channelsImg" src="./graphics/base1.jpg" /> </a><br>
    <img class="audioImg" src="./graphics/audio.png" />
    <span id="cell4-s" class="audioStatus">Connected <br> +00:03:07 <br> </span>
   </div>
@@ -69,8 +73,9 @@ $('#sliderBar').slider({ steps: 10, range: true, change: function(e,ui) { consol
    <div id="sliderBar">
     <div class='ui-slider-handle' id="sliderRect"></div>
    </div>	
-
-   <img class="audioImg" src="./graphics/audio.png" id="audioBar" />
+   <span id="audioBar">
+   <img class="audioImg" src="./graphics/audio.png" id="imgBar"/>
+    <br> Volume </span>
   </div>           
  </div>
 </div>
