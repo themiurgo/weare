@@ -50,19 +50,19 @@ div#status {
 }
 
 #fText{
- color: #CC0000;
+ color: #fff;
  position: relative;
  left: 15px;
 }
 
 #oText{
- color: #003399;
+ color: #fff;
  position: relative;
  left: 5px;
 }
 
 #sText{
- color: #33FF00;
+ color: #fff;
  position: relative;
  left: 8px;
 }
@@ -406,4 +406,8 @@ div#events ul li {
 
 .orangeborder {
  border: 3px solid #FF5A00;
+}
+
+.battery span {
+ color: #fff;
 }
