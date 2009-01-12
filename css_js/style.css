@@ -148,14 +148,6 @@ margin-left: 20px;
  padding-bottom: 30 px;
 }
 
-
-#panel{
- border: 2px solid #000000;
- padding-left: 15px;
- padding-bottom: 5px;
-
-}
-
 ul#time{
  float:right;
  text-align: right;
@@ -396,7 +388,7 @@ div.thetitle {
  margin-bottom: 10px;
 }
 
-div#events .datetime {
+.datetime {
  text-align: right;
  font-size: 1em;
  font-weight: bold;
@@ -410,4 +402,8 @@ div#events ul {
 
 div#events ul li {
  margin-bottom: 20px;
+}
+
+.orangeborder {
+ border: 3px solid #FF5A00;
 }
