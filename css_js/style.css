@@ -52,19 +52,19 @@ div#status {
 #fText{
  color: #CC0000;
  position: relative;
- left: 22px;
+ left: 15px;
 }
 
 #oText{
  color: #003399;
  position: relative;
- left: 11px;
+ left: 5px;
 }
 
 #sText{
  color: #33FF00;
  position: relative;
- left: 15px;
+ left: 8px;
 }
 
 .battery{
