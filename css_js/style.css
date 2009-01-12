@@ -349,29 +349,65 @@ div.slider img#down {
 
 /* HOME */
 
+div#actualTask {
+ border: 3px solid #FF5A00;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 240px;
+ height: 210px;
+}
+
 div.sidebar {
- border: 1px solid #000000;
  width: 250px;
- height: 412px;
+ height: 416px;
  position: absolute;
  right: 0;
  top: 0;
 }
 
 div#video {
- background: #000;
+ border: 3px solid #FF5A00;
+ text-align: center;
  width: 240px;
  height: 180px;
- position: absolute;
- top: 0;
- right: 5px;
 }
 
 div#events {
- border: 1px solid #000000;
- width: 300px;
- height: 412px;
+ border: 3px solid #FF5A00;
+ width: 290px;
+ height: 410px;
  position: absolute;
  left: 0;
  top: 0;
+}
+
+div.thetitle {
+ font-weight: bold;
+ display: block;
+ border: 3px solid #FF5A00;
+ background: #FF5A00;
+ height: 20px;
+ padding:5px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #00487D;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+div#events .datetime {
+ text-align: right;
+ font-size: 1em;
+ font-weight: bold;
+}
+
+div#events ul {
+ position:absolute;
+ left:0;
+ padding: 5px;
+}
+
+div#events ul li {
+ margin-bottom: 20px;
 }
