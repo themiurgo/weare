@@ -150,7 +150,7 @@ margin-left: 20px;
 ul#time{
  float:right;
  text-align: right;
- background: url("../graphics/clock.png") no-repeat;
+/* background: url("../graphics/clock.png") no-repeat; */
  width: 200px;
  font-size: 2ex;
  font-weight: bold;
