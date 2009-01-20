@@ -144,7 +144,7 @@ margin-left: 20px;
  font-size: 1.2em;
  position: relative;
  left: 20px;
- padding-bottom: 30 px;
+ padding-bottom: 30px;
 }
 
 .title{
@@ -362,7 +362,8 @@ div#actualTask {
  bottom: 0;
  left: 0;
  width: 240px;
- height: 210px;
+ height: 180px;
+ font-size: 0.9em;
 }
 
 div.sidebar {
@@ -377,7 +378,7 @@ div#video {
  border: 3px solid #FF5A00;
  text-align: center;
  width: 240px;
- height: 180px;
+ height: 216px;
 }
 
 div#events {
