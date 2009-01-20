@@ -313,9 +313,20 @@ ul#tasks > li > ul > li {
  margin-bottom: 10px;
 }
 
-ul#tasks > li > ul > li.selected {
+ul#hometask > li {
+ margin-left: 30px;
+ text-align: left;
+ list-style: circle;
+}
+
+ul#tasks > li > ul > li.selected,
+ul#hometask > li.selected {
  margin-left: 30px;
  list-style: disc;
+ font-weight: bold;
+ border-bottom: 2px solid;
+ border-top: 2px solid;
+ border-right: 10px solid;
 }
 
 div.slider {
