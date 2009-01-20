@@ -147,6 +147,11 @@ margin-left: 20px;
  padding-bottom: 30 px;
 }
 
+.title{
+ font-weight: bold;
+ text-align: center;
+}
+
 ul#time{
  float:right;
  text-align: right;
